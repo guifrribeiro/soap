@@ -6,12 +6,12 @@ namespace Models
   public interface IUserService
   {
     [OperationContract]
-    string Test(string s);
+    User Test(string s);
 
     [OperationContract]
     void XmlMethod(System.Xml.Linq.XElement xml);
 
     [OperationContract]
-    User TestUser(User inputModel);
+    User TestUser(int id, string name, string email);
   }
 }
