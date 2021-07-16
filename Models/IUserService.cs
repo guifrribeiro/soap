@@ -6,12 +6,6 @@ namespace Models
   public interface IUserService
   {
     [OperationContract]
-    User Test(string s);
-
-    [OperationContract]
-    void XmlMethod(System.Xml.Linq.XElement xml);
-
-    [OperationContract]
-    User TestUser(int id, string name, string email);
+    User CreateUser(string name, string email, string password, bool admin);
   }
 }
